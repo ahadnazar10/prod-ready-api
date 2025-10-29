@@ -1,7 +1,10 @@
+import "./config/tracing.js"; // OpenTelemetry must load first
 import app from "./app.js";
 import config from "./config/index.js";
-import { logInfo } from "./utils/logger.js";
+import logger from "./utils/logger.js";
 
-app.listen(config.port, () => {
-  logInfo(`✅ Server running on http://localhost:${config.port}`);
+const PORT = config.port || 3000;
+
+app.listen(PORT, () => {
+  logger.info(`✅ Server running on http://localhost:${PORT}`);
 });
