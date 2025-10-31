@@ -18,7 +18,7 @@ Implements authentication, role-based access, rate limiting, structured logging,
 | **Observability** | Prometheus, OpenTelemetry, JSON structured logs |
 | **DevOps** | Docker, Docker Compose, GitHub Actions |
 | **Testing** | Jest + Supertest |
-| **Infra Config** | Environment variables (`.env`) |
+
 
 ---
 
@@ -50,7 +50,7 @@ Implements authentication, role-based access, rate limiting, structured logging,
 - Dockerized for reproducible environments
 - `docker-compose.yml` spins up: API + MySQL + Redis + Prometheus
 - GitHub Actions: lint → test → build → deploy
-- `.env` for local config + secrets managed via environment variables
+
 
 ---
 
