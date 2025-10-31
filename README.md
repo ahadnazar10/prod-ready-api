@@ -54,5 +54,5 @@ Implements authentication, role-based access, rate limiting, structured logging,
 
 ---
 
-## 🏗️ Project Structure
+
 
